@@ -50,6 +50,13 @@ header ul li a{
     font-weight: 600;
     transition: 0.7s;
 }
+.doc:hover {
+    opacity: 1;
+  }
+  
+.doc{
+    opacity: 0.6;
+}
 .zona1{
     position: relative;
     width: 100%;
@@ -63,4 +70,24 @@ header.abajo .logo,
 header.abajo ul li a{
     color: #000;
 }
-
+.introduccion{
+    height: 200px;
+    background-color: lightgray;
+    margin-right: 19%;
+    margin-left: 19%;
+     
+}
+.zona2{
+    height: 200px;
+    background-color: lightgray;
+    width: 100%; 
+}
+h2{
+    font-family: helvetica;
+    text-align: center;
+    
+}
+h4{
+    font-family: helvetica;
+    font-weight: normal;
+}
