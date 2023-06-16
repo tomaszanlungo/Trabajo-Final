@@ -81,11 +81,11 @@ header.abajo ul li a{
     height: 200px;
     background-color: lightgray;
     width: 100%; 
+    padding-top: 40px;
 }
 h2{
     font-family: helvetica;
     text-align: center;
-    
 }
 h4{
     font-family: helvetica;
@@ -244,3 +244,12 @@ p {
     text-transform: uppercase;
     font-size: 14px;
 }
+h6{
+    font-family: helvetica;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
