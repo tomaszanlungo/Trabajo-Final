@@ -91,3 +91,156 @@ h4{
     font-family: helvetica;
     font-weight: normal;
 }
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+.flecha {
+    display: flex;
+    align-items: center;
+    background-image: none;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    border-top-width: initial;
+    border-right-width: initial;
+    border-bottom-width: initial;
+    border-left-width: initial;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    color: var(--white);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: initial;
+    transition-property: all;
+}
+.d-flex {
+    display: flex;
+}
+.items-center {
+    align-items: center;
+}
+.flecha_abajo {
+    height: 36px;
+    width: 36px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-width: 1.5px;
+    border-right-width: 1.5px;
+    border-bottom-width: 1.5px;
+    border-left-width: 1.5px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.3);
+    border-right-color: rgba(255, 255, 255, 0.3);
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+    border-left-color: rgba(255, 255, 255, 0.3);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    color: var(--white);
+    font-size: 11px;
+    position: relative;
+}
+.flecha_abajo_1 {
+    width: 1.5px;
+    height: 14px;
+    position: absolute;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+    animation-name: DownButton_buttonOpacity__lGTbw;
+    background-color: rgb(255, 255, 255);
+}
+.icono_flecha {
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+    animation-name: DownButton_ArrowMove__3uhzY;
+}
+.icono_flecha::after, .icono_flecha::before {
+    content: "";
+    bottom: 13px;
+    width: 6px;
+    height: 1.5px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+}
+.icono_flecha::before {
+    left: 12px;
+    transform: rotate(40deg);
+}
+.icono_flecha::after {
+    right: 12px;
+    transform: rotate(-40deg);
+}
+.icono_flecha::after, .icono_flecha::before {
+    content: "";
+    bottom: 13px;
+    width: 6px;
+    height: 1.5px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+}
+.flecha_abajo {
+    color: var(--white);
+    font-size: 11px;
+}
+.flecha {
+    color: var(--white);
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #fff;
+}
+.flecha p {
+    font-family: helvetica;
+    opacity: 0.9;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
