@@ -252,4 +252,33 @@ h6{
     font-weight: lighter;
     font-size: 12px;
 }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Crea tres columnas de igual ancho */
+    grid-gap: 4%; /* Espacio entre las columnas */
 
+  }
+  
+.column {
+    background-color: rgb(255, 254, 223);
+    height: 470px; /* Altura de las columnas */
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+}
+.presentacion{
+    font-family: helvetica;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+
+}
+.img{
+    background-color: grey;
+    border-radius: 10px;
+    height: 350px;
+    margin-top: 40px;
+}
+  
