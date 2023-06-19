@@ -253,6 +253,7 @@ h6{
 }
 .container {
     display: grid;
+    position: relative;
     grid-template-columns: 1fr 1fr 1fr; /* Crea tres columnas de igual ancho */
     grid-gap: 4%; /* Espacio entre las columnas */
 
@@ -277,7 +278,7 @@ h6{
 .img{
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
-    height: 340px;
+    height: 330px;
     margin-top: 40px;
 }
 .img img {
@@ -289,8 +290,9 @@ h6{
 .img_2{
     background-color: grey;
     border-radius: 10px;
-    height: 340px;
-    margin-top: 180px;
+    height: 330px;
+    margin-top: 160px;
+    position: relative;
 }
 .img_2 img {
     width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
@@ -298,7 +300,7 @@ h6{
     border-radius: 10px;
   }
 .column_2 {
-    background-color: rgb(255, 248, 198);
+
     height: 610px; /* Altura de las columnas */
     padding-left: 10%;
     padding-right: 10%;
@@ -320,8 +322,8 @@ h5{
 .img_3{
     background-color: grey;
     border-radius: 10px;
-    height: 340px;
-    margin-top: 180px;
+    height: 330px;
+    margin-top: 160px;
 }
 .img_3 img {
     width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
@@ -338,8 +340,8 @@ h5{
 .img_4{
     background-color: grey;
     border-radius: 10px;
-    height: 340px;
-    margin-top: 180px;
+    height: 330px;
+    margin-top: 160px;
 }
 .img_4 img {
     width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
@@ -356,8 +358,8 @@ h5{
 .img_5{
     background-color: grey;
     border-radius: 10px;
-    height: 340px;
-    margin-top: 180px;
+    height: 330px;
+    margin-top: 160px;
 }
 .img_5 img {
     width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
@@ -371,4 +373,53 @@ h5{
     padding-right: 10%;
     padding-top: 40px;
 }
+.alarm{
+    opacity: 0.3;
+    position: absolute; /* Posiciona el elemento de forma absoluta dentro del contenedor */
+    top: 0; /* Ajusta la posición vertical superior del elemento */
+    left: 0; /* Ajusta la posición horizontal izquierda del elemento */
+    z-index: 1; /* Asegura que la imagen de alarma esté por encima de otros elementos */
+    margin-top: 40px;
+    margin-left: -40px;
+}
+.alarm img{
+    width: 120%;
+}
   
+.sun{
+    opacity: 0.3;
+    position: absolute; /* Posiciona el elemento de forma absoluta dentro del contenedor */
+    top: 0; /* Ajusta la posición vertical superior del elemento */
+    left: 0; /* Ajusta la posición horizontal izquierda del elemento */
+    z-index: 1; 
+    margin-top: 140px;
+    margin-left: 62%;
+}
+.sun img{
+    width: 120%;
+}
+.breakfast{
+    opacity: 0.3;
+    position: absolute; /* Posiciona el elemento de forma absoluta dentro del contenedor */
+    top: 0; /* Ajusta la posición vertical superior del elemento */
+    left: 0; /* Ajusta la posición horizontal izquierda del elemento */
+    z-index: 1; 
+    margin-top: 400px;
+    margin-left: 30%;
+}
+.breakfast img{
+    width: 120%;
+}
+.birds{
+    opacity: 0.3;
+    position: absolute; /* Posiciona el elemento de forma absoluta dentro del contenedor */
+    top: 0; /* Ajusta la posición vertical superior del elemento */
+    left: 0; /* Ajusta la posición horizontal izquierda del elemento */
+    z-index: 1; 
+    margin-top: 70px;
+    margin-left: 95%;
+    margin-right: -50px;
+}
+.birds img{
+    width: 120%;
+}
