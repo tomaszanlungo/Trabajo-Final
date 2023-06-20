@@ -71,22 +71,40 @@ header ul li a{
     
   }
 
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px) scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
   .zona1 h1 {
     font-size: 34px;
     color: white;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
   }
   
   .zona1 p {
     font-size: 16px;
     color: white;
     display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding-top: 20px;
+    animation: fadeIn 1s ease-in-out;
   }
 
-  #portada{
+  /* #portada{
     margin-top: -260px;
   }
-  
-  
+  */
+    
   
 header.abajo .logo,
 header.abajo ul li a{
