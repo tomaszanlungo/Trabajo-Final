@@ -57,15 +57,37 @@ header ul li a{
 .doc{
     opacity: 0.6;
 }
-.zona1{
+.zona1 {
     position: relative;
     width: 100%;
     height: 100vh;
     background: url(fondo.jpg);
     background-size: cover;
     background-position: center center;
+    display: flex;
+    justify-content: center;  /*Esto es si lo queremos centrado. .. Desp vemos como seria nuestra idea*/
+    /*justify-content: flex-start;*/
+    align-items: center;
+    
+  }
 
-}
+  .zona1 h1 {
+    font-size: 34px;
+    color: white;
+  }
+  
+  .zona1 p {
+    font-size: 16px;
+    color: white;
+    display: block;
+  }
+
+  #portada{
+    margin-top: -260px;
+  }
+  
+  
+  
 header.abajo .logo,
 header.abajo ul li a{
     color: #000;
@@ -287,20 +309,20 @@ h6{
     border-radius: 10px;
   }
 
-.img_2{
+.img_2{ /* contenedor */
     background-color: grey;
     border-radius: 10px;
-    height: 330px;
+    height: 300px;
+    width: 350px; /* el cambio en todas para mantener proporciones  */
     margin-top: 160px;
     position: relative;
 }
-.img_2 img {
+.img_2 img { /* imagen */
     width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
     height: 100%; /* Ajusta la altura automáticamente para mantener la proporción */
     border-radius: 10px;
   }
 .column_2 {
-
     height: 610px; /* Altura de las columnas */
     padding-left: 10%;
     padding-right: 10%;
