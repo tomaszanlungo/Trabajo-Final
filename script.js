@@ -47,5 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
       return dataByHour;
     }
+
+    document.select("#chart").append(() => plot);
+
   });
   

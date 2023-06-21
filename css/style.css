@@ -352,8 +352,9 @@ h6{
     height: 610px; /* Altura de las columnas */
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 40px;
+    /* padding-top: 40px; */
 }
+
 h5{
     font-family: helvetica;
     font-weight: normal;
@@ -363,6 +364,40 @@ h5{
     font-size: 16px;
 
 }
+
+.container_x{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr; /* Crea tres columnas de igual ancho */
+    grid-gap: 4%; /* Espacio entre las columnas */
+    scroll-margin-top: 200px;
+}
+
+.column_x{
+    height: 610px; /* Altura de las columnas */
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+.img_x{ /* contenedor */
+    border-radius: 10px;
+    height: 290px;
+
+    /* tomi
+    height: 300px;
+    width: 350px; /* el cambio en todas para mantener proporciones  */
+
+    margin-top: 160px;
+    position: relative;
+}
+
+.img_x img { /* imagen */
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Ajusta la altura automáticamente para mantener la proporción */
+    border-radius: 10px;
+  }
+
 .bod{
     padding-left: 70px;
     padding-right: 70px;
