@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body> 
+ 
     <header>
       <a href="#" class="logo">Katy's blog</a>
       <nav>
@@ -19,12 +19,19 @@
           </div>
         </ul>
       </nav>
+
+      <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+      <script src="script.js"></script>
+
     </header>
+
+  <body>
     <section class="zona1">
       <div id="portada">
         <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima voluptatum adipisci numquam dicta dolor rem quam minus pariatur, </p>
-        <img id="img.blog" src="css/blog.jpg" alt="Blog">
+        <!-- <img id="img.blog" src="css/blog.jpg" alt="Blog"> -->
       </div>
     </section>
     <span>
@@ -113,6 +120,8 @@
           <div class="column_2">
             <div class="img_2">
 
+              <img src="css/pali_morning.jpg" alt="Descripción de la imagen">
+
             </div>
             <div class="text">
               <h5>
@@ -148,7 +157,7 @@
 
           <div class="column_3">
             <div class="img_3">
-
+                <img src="css/pali_study.jpg" alt="Descripción de la imagen">
             </div>
             <div class="text">
               <h5>
@@ -159,7 +168,7 @@
 
           <div class="column_3">
             <div class="img_3">
-
+              
             </div>
             <div class="text">
               <h5>Texto tomi mañana Texto tomi mañana Texto tomi mañana Texto tomi mañana</h5>
@@ -185,7 +194,8 @@
 
           <div class="column_4">
             <div class="img_4">
-              
+              <img src="css/pali_free.jpg" alt="Descripción de la imagen">
+
             </div>
             <div class="text">
               <h5>
@@ -222,7 +232,7 @@
 
           <div class="column_5">
             <div class="img_5">
-
+              <img src="css/pali_night.jpg" alt="Descripción de la imagen">
             </div>
             <div class="text">
               <h5>
@@ -243,11 +253,10 @@
         </div>
 
       </section>
-      
+    
+      <div id="chart"></div>
+
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
-    <script type="module" src="script.js"></script>
   </body>
 </html>
