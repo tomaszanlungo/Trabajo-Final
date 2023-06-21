@@ -65,7 +65,8 @@ header ul li a{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(fondo.jpg);
+    /* background: url(fondo.jpg); */
+    background-color: rgb(194, 149, 237);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -108,6 +109,104 @@ header ul li a{
     margin-top: -260px;
   }
   */
+
+  @import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
+  .portada h1 {
+      font-size: 5rem;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+      color: white;
+  }
+  
+  .portada {
+      position: relative;
+      z-index: 0;
+      background-color: rgb(194, 149, 237);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+  }
+
+  .imagen_portada {
+    position: absolute;
+    top: 100px; /* Ajusta la posición verticalmente */
+    left: 50px; /* Ajusta la posición horizontalmente */
+    width: 200px; /* Ajusta el ancho de la imagen */
+    height: auto; /* La altura se ajusta automáticamente proporcionalmente al ancho */
+  }
+
+  .imagen_portada2 {
+    position: absolute;
+    top: 400px; /* Ajusta la posición verticalmente */
+    right: 12px; /* Ajusta la posición horizontalmente */
+    width: 200px; /* Ajusta el ancho de la imagen */
+    height: auto; /* La altura se ajusta automáticamente proporcionalmente al ancho */
+  }
+
+
+  .imagen_portada img,
+  .imagen_portada2 img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  
+
+  .pulse {
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 30rem;
+      
+  }
+
+    circle {
+        fill: #7229aa;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: 50% 50%;
+        animation: pulse 2s cubic-bezier(.5,.5,0,1);
+        
+        &:nth-child(2) {
+            fill: #7229aa;
+            animation: pulse 2s 0.75s cubic-bezier(.5,.5,0,1);
+        }
+        
+        &:nth-child(3) {
+            fill: #7229aa;
+            animation: pulse 2s 1.5s cubic-bezier(.5,.5,0,1);
+        }
+
+        &:nth-child(4) {
+            fill: #7229aa;
+            animation: pulse 2s 2.25s cubic-bezier(.5,.5,0,1);
+        }
+
+        &:nth-child(5) {
+            fill: #7229aa;
+            animation: pulse 2s 3.0s cubic-bezier(.5,.5,0,1);
+        }
+        
+    }
+      
+  
+  
+  @keyframes pulse {
+      
+      25% {
+          opacity: 0.4;
+      }
+      
+      100% {
+          transform: scale(1);
+      }
+      
+  }
+
     
   
 header.abajo .logo,
@@ -116,21 +215,30 @@ header.abajo ul li a{
 }
 .introduccion{
     height: 200px;
-    background-color: lightgray;
+    background-color: rgb(214, 202, 225);
     margin-right: 19%;
     margin-left: 19%;
      
 }
 .zona2{
     height: 200px;
-    background-color: lightgray;
+    background-color: rgb(214, 202, 225);
     width: 100%; 
     padding-top: 40px;
 }
+.zona2 p{
+    text-align: center;
+    color: #000;
+}
+
 h2{
     font-family: helvetica;
     text-align: center;
     font-size: 22px;
+}
+
+p{
+    font-family: helvetica;
 }
 h4{
     font-family: helvetica;
@@ -304,13 +412,13 @@ h6{
 }
 
 .column {
-    background-color: rgb(237, 255, 226);
     height: 470px; /* Altura de las columnas */
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 40px;
 }
 .presentacion{
+    color: white;
     font-family: helvetica;
     display: flex;
     justify-content: center;
@@ -320,7 +428,7 @@ h6{
 
 }
 .img{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     height: 330px;
     margin-top: 40px;
@@ -362,7 +470,7 @@ h5{
     margin-left: 5px;
     margin-right: 5px;
     font-size: 16px;
-
+    text-align: center;
 }
 
 .container_x{
@@ -401,6 +509,7 @@ h5{
 .bod{
     padding-left: 70px;
     padding-right: 70px;
+    background-color: black;
 }
 .img_3{
     background-color: grey;
@@ -506,3 +615,19 @@ h5{
 .birds img{
     width: 120%;
 }
+
+.zona8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .representacion {
+    text-align: center;
+  }
+  
+  .representacion img {
+    display: block;
+    margin: 0 auto;
+  }
+  

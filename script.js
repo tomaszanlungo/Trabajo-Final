@@ -3,8 +3,27 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("abajo",window.scrollY>0)
 })
 
+
 // Archivo: script.js
 document.addEventListener("DOMContentLoaded", () => {
+  
+    function processData(data) {
+      // Crea un objeto para almacenar los datos por hora
+      const dataByHour = [];
+  
+      // Recorre los datos y agrupa las horas y la cantidad de horas escuchadas
+      data.forEach(entry => {
+        const endTime = new Date(entry.endTime);
+        const hour = endTime.getHours();
+        const msPlayed = entry.msPlayed;
+        const hoursPlayed = msPlayed / (1000 * 60 * 60); // Convierte milisegundos a horas
+  
+        dataByHour.push({ hour, hoursPlayed });
+      });
+  
+      return dataByHour;
+    }
+
     // Obtén los datos del archivo JSON
     fetch("datos/StreamingHistory0.json")
       .then(response => response.json())
@@ -26,29 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
           },
         });
   
-        // Renderiza el gráfico en el elemento con ID "chart"
-        const chartContainer = document.getElementById("chart");
-        chartContainer.appendChild(plot);
       });
-  
-    function processData(data) {
-      // Crea un objeto para almacenar los datos por hora
-      const dataByHour = [];
-  
-      // Recorre los datos y agrupa las horas y la cantidad de horas escuchadas
-      data.forEach(entry => {
-        const endTime = new Date(entry.endTime);
-        const hour = endTime.getHours();
-        const msPlayed = entry.msPlayed;
-        const hoursPlayed = msPlayed / (1000 * 60 * 60); // Convierte milisegundos a horas
-  
-        dataByHour.push({ hour, hoursPlayed });
-      });
-  
-      return dataByHour;
-    }
-
-    document.select("#chart").append(() => plot);
-
+    // Renderiza el gráfico en el elemento con ID "chart"
+    const chartContainer = document.getElementById("chart");
+    chartContainer.appendChild(plot);
   });
   
+
