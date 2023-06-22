@@ -417,39 +417,6 @@ h4{
     border-radius: 10px;
   }
 
-.img_2{ /* contenedor */
-    background-color: grey;
-    border-radius: 10px;
-    height: 290px;
-
-    /* tomi
-    height: 300px;
-    width: 350px; /* el cambio en todas para mantener proporciones  */
-
-    margin-top: 160px;
-    position: relative;
-}
-.img_2 img { /* imagen */
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-    height: 100%; /* Ajusta la altura automáticamente para mantener la proporción */
-    border-radius: 10px;
-  }
-.column_2 {
-    height: 610px; /* Altura de las columnas */
-    padding-left: 15%;
-    padding-right: 15%;
-    /* padding-top: 40px; */
-}
-
-h5{
-    font-family: helvetica;
-    font-weight: normal;
-    margin-top: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-size: 16px;
-    text-align: center;
-}
 
 .container_x{
     display: grid;
@@ -466,7 +433,6 @@ h5{
     padding-left: 15%;
     padding-right: 15%;
 }
-
 
 .img_x{ /* contenedor */
     border-radius: 10px;
@@ -490,60 +456,6 @@ h5{
     padding-left: 70px;
     padding-right: 70px;
     background-color: black;
-}
-.img_3{
-    background-color: grey;
-    border-radius: 10px;
-    height: 330px;
-    margin-top: 160px;
-}
-.img_3 img {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-    height: 100%; /* Ajusta la altura automáticamente para mantener la proporción */
-    border-radius: 10px;
-  }
-.column_3 {
-    background-color: rgb(255, 233, 190);
-    height: 610px; /* Altura de las columnas */
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 40px;
-}
-.img_4{
-    background-color: grey;
-    border-radius: 10px;
-    height: 330px;
-    margin-top: 160px;
-}
-.img_4 img {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-    height: 100%; /* Ajusta la altura automáticamente para mantener la proporción */
-    border-radius: 10px;
-  }
-.column_4 {
-    background-color: rgb(214, 250, 255);
-    height: 610px; /* Altura de las columnas */
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 40px;
-}
-.img_5{
-    background-color: grey;
-    border-radius: 10px;
-    height: 330px;
-    margin-top: 160px;
-}
-.img_5 img {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-    height: 100%; /* Ajusta la altura automáticamente para mantener la proporción */
-    border-radius: 10px;
-  }
-.column_5 {
-    background-color: rgb(181, 175, 255);
-    height: 610px; /* Altura de las columnas */
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 40px;
 }
 
 .zona8 {
