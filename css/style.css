@@ -500,21 +500,21 @@ h4{
     padding: 1rem;
   }
   
-  #steps_container {
-    position: relative;
-    padding: 0;
-    max-width: 400px;
-    margin: 0 auto;
-  }
+#steps_container {
+position: relative;
+padding: 0;
+max-width: 400px;
+margin: 0 auto;
+}
   /* Las fotos por default están ocultas */
-  .foto {
-  position: absolute;
-  opacity: 0;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  max-width: 1000px;
-  transition: opacity 0.5s ease-in-out;
+.foto {
+position: absolute;
+opacity: 0;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+max-width: 1000px;
+transition: opacity 0.5s ease-in-out;
 }
 
 .is_visible .foto {
