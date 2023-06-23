@@ -371,12 +371,10 @@ header.abajo ul li a{
     margin-inline-end: 0px;
 }
 
-.zona3 h4{
-    font-family: helvetica;
-    font-weight: normal;
-}
 h4{
     color: #000;
+    font-family: helvetica;
+    font-weight: normal;
 }
 
 .container {
@@ -495,4 +493,61 @@ h4{
 .refe{
     opacity: 0.6;
 }
+
+#scrolly_fotos {
+    position: relative;
+    background-color: #e6e6c2;
+    padding: 1rem;
+  }
+  
+  #steps_container {
+    position: relative;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  /* Las fotos por default están ocultas */
+  .foto {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 1000px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.is_visible .foto {
+  opacity: 1;
+}
+  #fixed_container {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    transform: translate3d(0, 0, 0);
+    background-color: #caa9a9;
+    z-index: 0;
+    height: 100vh;
+  }
+  
+  .step {
+    margin: 0 auto 2rem auto;
+    color: #fff;
+    height: 100vh;
+    border: 1px solid red; // para debuggear
+  }
+  
+  .step:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  .step p {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.7);
+  }
   
