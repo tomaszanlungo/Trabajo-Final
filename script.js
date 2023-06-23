@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             /* Carlos: Faltaba sumar las horas */
 
-            Plot.groupX({y: "sum"}, {x: "hour", y: "hoursPlayed"})
+            Plot.groupX({y: "sum"}, {x: "hour", y: "hoursPlayed", fill: "lightpink"})
 
             )
 
