@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Katy's blog</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+
+  </head>
+
+  
+  <header>
+    <a href="#" class="logo">Katy's blog</a>
+    <nav>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <div class="doc">
+          <li><a href="datos/StreamingHistory0.json">Documentacion</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+
+  <body>
+    <main>
+      <section id="intro">        
+        <h1>Katy's blog</h1>
+        
+        <svg class="pulse" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle id="Oval" cx="512" cy="512" r="512"></circle>
+              <circle id="Oval" cx="512" cy="512" r="512"></circle>
+              <circle id="Oval" cx="512" cy="512" r="512"></circle>
+              <circle id="Oval" cx="512" cy="512" r="512"></circle>
+        </svg>
+  
+        <div class="imagen_portada">
+          <img src="pali_y_valen.png" alt="pali_y_valen">
+        </div>
+        <div class="imagen_portada2">
+          <img src="palitomi.png" alt="palitomi">
+        </div>
+
+      </section>
+
+      <section id="intro2">
+          <h2> Escuchando las emociones</h2>
+          <h6> KATY SPROUSE  •  15/06/23  •  MUSICA</h6>
+          <p>Bienvenidos a un nuevo blog con Katy! El día de hoy les queria hablar sobre la musica. Junto con mis dos amigos Sydney y Tomi comparamos las canciones que escuchamos en los distintos momentos del día y analizamos que nos muestran sobre nuestros estados de animo.</p>
+
+          <div class="imagen_portada3">
+            <img src="pali_mariposa.png" alt="valen">
+          </div>
+
+          <div class="container">
+            <div class="column">
+              <div class="presentacion">
+                <h4>Meet Sydney</h4>
+              </div>
+              <div class="img">
+                <img src="valen.gif" alt="Sydney">
+              </div>
+            </div>
+        
+            <div class="column">
+              <div class="presentacion">
+                <h4>This is me, Katy!</h4>
+              </div>
+              <div class="img">
+                <img src="pali.gif" alt="katy">
+              </div>
+            </div>
+        
+            <div class="column">
+              <div class="presentacion">
+                <h4>Meet Tomi</h4>
+              </div>
+              <div class="img">
+                <img src="tomi.gif" alt="tomi"> 
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+      <section id="scrolly_fotos">
+        <figure id="fixed_container">
+          <img id="foto_0" class="foto" src="representacion1.png" alt="Morning">
+          <img id="foto_1" class="foto" src="representacion2.png" alt="Study">
+          <img id="foto_2" class="foto" src="representacion3.png" alt="Free">
+          <img id="foto_3" class="foto" src="representacion4.png" alt="Night">
+        </figure>
+
+        <article id="steps_container">
+          <div class="step" data-step="Morning">
+            <h1> Morning </h1>
+            <p>Texto para imagen 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="step" data-step="Study">
+            <h1> Study </h1>
+            <p>Texto para imagen 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="step" data-step="Free">
+            <h1> Free </h1>
+            <p>Texto para imagen 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="step" data-step="Night">
+            <h1> Night </h1>
+            <p>Texto para imagen 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="outro">
+        <div id="chart"></div>
+        <p>Horas del dia</p>
+
+        <div class="imagen_portada4">
+          <img src="pali_corazon.png" alt="valen">
+        </div>
+        
+      </section>
+      
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>

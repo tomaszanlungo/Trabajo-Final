@@ -1,0 +1,380 @@
+/* inicio de header */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.7s;
+  padding: 30px 20px;
+  z-index: 10;
+}
+header.abajo{
+  background: #fff;
+  padding: 15px 20px;
+}
+header .logo{
+  position: relative;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 2px;
+  transition: 1.5s;
+  text-decoration: none;
+  margin-right: auto;
+  margin-left: 100px;
+  font-family: helvetica;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li{
+  list-style: none;
+}
+header ul li a{
+  position: relative;
+  font-family: helvetica;
+  margin: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.7s;
+  font-size: 17px;
+}
+
+header.abajo .logo,
+header.abajo ul li a{
+    color: #000;
+}
+
+.doc:hover {
+  opacity: 1;
+}
+
+.doc{
+  opacity: 0.6;
+}
+
+/* fin de header */
+
+/* inicio de intro */
+#intro {
+   position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgb(14, 0, 27) 0%, rgb(35, 3, 54) 35%, rgb(107, 57, 135) 100%);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;  /*Esto es si lo queremos centrado. .. Desp vemos como seria nuestra idea*/
+    /*justify-content: flex-start;*/
+    align-items: center;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
+#intro h1 {
+  position: absolute;
+  font-size: 70px;
+  color: white;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+}
+
+#pulse {
+  z-index: -1;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 30rem;
+  
+}
+
+@keyframes pulse {
+  
+  25% {
+      opacity: 0.4;
+  }
+  
+  100% {
+     transform: scale(0.4); /* tamano del circulo */
+  } 
+  
+}
+
+circle {
+    fill: #7229aa;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: 50% 50%;
+    animation: pulse 2s cubic-bezier(.5,.5,0,1);
+    
+    &:nth-child(2) {
+        fill: #7229aa;
+        animation: pulse 2s 0.75s cubic-bezier(.5,.5,0,1);
+    }
+    
+    &:nth-child(3) {
+        fill: #7229aa;
+        animation: pulse 2s 1.5s cubic-bezier(.5,.5,0,1);
+    }
+
+    &:nth-child(4) {
+        fill: #7229aa;
+        animation: pulse 2s 2.25s cubic-bezier(.5,.5,0,1);
+    }
+}
+  
+
+.imagen_portada {
+  position: absolute;
+  top: 200px; /* Ajusta la posición verticalmente */
+  left: 100px; /* Ajusta la posición horizontalmente */
+  width: 200px; /* Ajusta el ancho de la imagen */
+  height: auto; /* La altura se ajusta automáticamente proporcionalmente al ancho */
+}
+
+.imagen_portada2 {
+  position: absolute;
+  top: 400px; /* Ajusta la posición verticalmente */
+  right: 100px; /* Ajusta la posición horizontalmente */
+  width: 200px; /* Ajusta el ancho de la imagen */
+  height: auto; /* La altura se ajusta automáticamente proporcionalmente al ancho */
+}
+
+.imagen_portada3 {
+  position: absolute;
+  left: 20px;
+  top: 800px;
+}
+
+.imagen_portada4 {
+  position: absolute;
+  top: 5750px; /* Ajusta la posición verticalmente */
+  right: 100px; /* Ajusta la posición horizontalmente */
+}
+
+.imagen_portada3 img{
+  max-width: 150px;
+  height: auto;
+  display: flex;
+}
+
+.imagen_portada4 img{
+  max-width: 180px;
+  height: auto;
+  display: flex;
+}
+
+.imagen_portada img,
+.imagen_portada2 img{
+  max-width: 250px;
+  height: auto;
+  display: flex;
+}
+
+/* fin de intro */
+
+/* Empieza la seccion de la intr02 "escuchando las emociones" */
+#intro2{
+  height: 800px;
+  background: linear-gradient(180deg, rgb(13, 0, 27) 0%, rgb(11, 0, 20) 40%, rgb(9, 0, 6) 100%);
+  text-align: center;
+  padding-top: 30px;
+  font-family: helvetica;
+}
+
+#intro2 h2{
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+}
+
+#intro2 h6{
+  font-size: 11px;
+  color: rgb(255, 255, 255);
+}
+
+#intro2 p{
+  font-family: helvetica;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 20px;
+  color: rgb(255, 255, 255);
+}
+
+/* animacion de presentaciones */
+.column {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 2s, transform 2.5s;
+}
+
+.column.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* fin de animacion de presentaciones */
+
+.container {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr; /* Crea tres columnas de igual ancho */
+  grid-gap: 4%; /* Espacio entre las columnas */
+  max-width: 1400px;
+  margin: 0 auto; 
+
+}
+
+.column {
+  height: 470px; /* Altura de las columnas */
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 40px;
+}
+.presentacion{
+  color: white;
+  font-family: helvetica;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+
+}
+.img{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 330px;
+  margin-top: 40px;
+}
+.img img {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: 100%; /* Ajusta la altura automáticamente para mantener la proporción */
+  border-radius: 10px;
+}
+
+/* fin de intro 2 */
+
+#scrolly_fotos {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  padding: 0.2rem;
+}
+
+#steps_container {
+  position: relative;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+/* Las fotos por default están ocultas */
+.foto {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 1000px;
+  transition: opacity 0.5s ease-in-out;
+}
+.is_visible {
+  opacity: 1;
+}
+
+#fixed_container {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  transform: translate3d(0, 0, 0);
+  background-color: #000000;
+  z-index: 0;
+  height: 100vh;
+}
+
+.step {
+  margin: 0 auto 2rem auto;
+  color: #fff;
+  height: 100vh;
+  /* border: 1px solid red;  */
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step h1{
+  text-align: center;
+  padding: 20px;
+  font-size: 60px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.step p {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+#outro {  
+  height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+#chart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+#chart svg{
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+}
+
+#chart svg text{
+  font-family: helvetica;
+}
+
+#outro p{
+  position: relative;
+  color: #fff;
+  margin-top: 550px;
+  font-size: 13px;
+}
