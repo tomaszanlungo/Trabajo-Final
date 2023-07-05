@@ -350,6 +350,17 @@ circle {
   background-color: rgba(0,0,0,0.7);
 }
 
+#referencias {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+  left: 20px; /* Ajusta la distancia desde la parte izquierda */
+  color: #ffffff; /* Ajusta el color del enlace */
+  font-size: 16px; /* Ajusta el tamaño de fuente del enlace */
+  z-index: 9999; /* Ajusta el valor del z-index para asegurarse de que esté por encima de otros elementos */
+}
+
+
+
 #outro {  
   height: 640px;
   display: flex;
