@@ -176,6 +176,7 @@ circle {
   top: 800px;
 }
 
+
 .imagen_portada4 {
   position: absolute;
   top: 5750px; /* Ajusta la posición verticalmente */
@@ -220,6 +221,7 @@ circle {
 #intro2 h6{
   font-size: 11px;
   color: rgb(255, 255, 255);
+  margin-top: 18px;
 }
 
 #intro2 p{
@@ -228,6 +230,7 @@ circle {
   padding-right: 15%;
   padding-top: 20px;
   color: rgb(255, 255, 255);
+  font-size: 18px;
 }
 
 /* animacion de presentaciones */
@@ -354,27 +357,106 @@ circle {
   align-items: center;
   background-color: #000000;
 }
+#outro {
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #000000;
+}
 
-#chart{
+#chart {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
+  z-index: 0;
+  margin-top: 60px;
 }
 
-#chart svg{
+#chart svg {
   background-color: #000;
   color: #fff;
   font-size: 13px;
+  z-index: 1;
 }
 
-#chart svg text{
+#chart svg text {
   font-family: helvetica;
 }
 
-#outro p{
+
+#outro p {
   position: relative;
   color: #fff;
-  margin-top: 550px;
   font-size: 13px;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+#outro h1, #outro h4 {
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  margin: 0;
+}
+
+#outro h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#outro h4 {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:600px; /* Ajusta la altura según tus necesidades */
+  background-color: #000;
+}
+
+
+#final h1 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.imagen_referencias {
+  max-width: 60%; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: auto;
+  margin-top: 200px;
+}
+
+#final {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 670px; /* Ajusta la altura según tus necesidades */
+}
+
+.imagen_referencias {
+  max-width: 55%; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: auto;
+  margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+}
+
+#final h1 {
+  text-align: center;
+  margin-bottom: 35px; /* Ajusta el margen inferior según tus necesidades */
 }
